@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Test Stanica3</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'><link rel="stylesheet" href="./style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- https://bytewebster.com/ -->
+<!-- https://bytewebster.com/ -->
+<!-- https://bytewebster.com/ -->
+</head>
+<body>
+	<section class="container">
+	<!--questionBox-->
+	<div class="questionBox" id="app">
+
+		<!-- transition -->
+		<transition :duration="{ enter: 500, leave: 300 }" enter-active-class="animated zoomIn" leave-active-class="animated zoomOut" mode="out-in">
+
+			<!--qusetionContainer-->
+			<div class="questionContainer" v-if="questionIndex<quiz.questions.length" v-bind:key="questionIndex">
+
+				<header>
+					<h1 class="title is-6" style="font-family: arial; color: white; "><b>Тест</b></h1>
+					<!--progress-->
+					<div class="progressContainer" style="color: #d8bfd8;">
+						<progress class="progress is-info is-small" :value="(questionIndex/quiz.questions.length)*100" max="100">{{(questionIndex/quiz.questions.length)*100}}%</progress>
+						<p>{{(questionIndex/quiz.questions.length)*100}}% complete</p>
+					</div>
+					<!--/progress-->
+				</header>
+
+				<!-- questionTitle -->
+				<h2 class="titleContainer title">Q. {{ quiz.questions[questionIndex].questionText }}</h2><br>
+				<h2 class="titleContainer title">{{ quiz.questions[questionIndex].codeExamples }}</h2>
+
+				<!-- quizOptions -->
+				<div class="optionContainer">
+					<div class="option" v-for="(response, index) in quiz.questions[questionIndex].responses" @click="selectOption(index)" :class="{ 'is-selected': userResponses[questionIndex] == index}" :key="index">
+						{{ index | charIndex }}. {{ response.text }}
+					</div>
+				</div>
+
+				<!--quizFooter: navigation and progress-->
+				<footer class="questionFooter">
+
+					<!--pagination-->
+					<nav class="pagination" role="navigation" aria-label="pagination">
+
+						
+
+						<!-- next button -->
+						<a class="button" :class="(userResponses[questionIndex]==null)?'':'is-active'" v-on:click="next();" :disabled="questionIndex>=quiz.questions.length">
+                    <i class='bx bx-skip-next' ></i> {{ (userResponses[questionIndex]==null)?'Next':'Next' }}
+                  </a>
+
+					</nav>
+					<!--/pagination-->
+
+				</footer>
+				<!--/quizFooter-->
+
+			</div>
+			<!--/questionContainer-->
+
+			<!--quizCompletedResult-->
+			<div v-if="questionIndex >= quiz.questions.length" v-bind:key="questionIndex" class="quizCompleted has-text-centered">
+  <!-- quizCompletedIcon: Achievement Icon -->
+  <span class="icon">
+    <i class="fa" :class="score()>4?'fa-check-circle-o is-active':'fa-times-circle'"></i>
+  </span>
+  <!--resultTitleBlock-->
+  <h2 class="title">
+    You did {{ (score()>6?'an amazing':(score()<4?'a poor':'a good')) }} job!
+  </h2>
+  <p class="subtitle">
+    Total score: {{ score() }} / {{ quiz.questions.length }}
+  </p>
+  <br>
+  <!-- Button to stanica3.html if score > 50%, otherwise button to stanica2.html -->
+  <button class="button" style="margin-top:30px; margin-left: 50px;" v-if="calculatePercentage() > 50"><a href="../certification.html" style="color:#353839;" >Сертификат</a></button>
+  <button class="button" style="margin-top:30px; margin-left: 50px;" v-else><a href="../Stanici.html" style="color:#353839;" >Станици</a></button>
+  <a class="button"  @click="restart()">Restart <i class="fa fa-refresh"></i></a>
+  <!--/resultTitleBlock-->
+</div>
+
+
+		</transition>
+
+	</div>
+	<!--/questionBox-->
+
+</section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
