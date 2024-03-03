@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+	  	<style>
+
+/* styles.css */
+.circle-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #014421;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.circle-icon:hover {
+    background-color: #0056b3;
+}
+
+
+</style>
+  	<div class="container">
+        <!-- Circle icon will be dynamically added here -->
+    </div>
+
+    <script>
+    	document.addEventListener("DOMContentLoaded", function() {
+    // Retrieve the user's name from localStorage
+    const loggedInUserName = localStorage.getItem("loggedInUserName");
+
+    if (loggedInUserName) {
+        // Extract the first letter of the user's name
+        const firstLetter = loggedInUserName.charAt(0).toUpperCase();
+
+        // Create the circle icon element
+        const circleIcon = document.createElement("div");
+        circleIcon.classList.add("circle-icon");
+        circleIcon.textContent = firstLetter; // Set the first letter as the content
+
+        // Append the circle icon to the body
+        document.body.appendChild(circleIcon);
+
+        circleIcon.addEventListener("click", function() {
+            // Handle click event (e.g., show a dropdown menu)
+            console.log("Circle icon clicked!");
+        });
+    } else {
+        console.log('User name not found in localStorage.'); // Debug output
+    }
+});
+
+    </script>
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar" >
+	    <div class="container d-flex align-items-center">
+	    	<a class="navbar-brand" href="#">Python<br><p style="margin-left: 60px;"> kids</p></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item active"><a href="index.html" class="nav-link pl-0" style="font-size:18px; color: #014421;">Почетна</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link" style="font-size:18px; color: #014421;">За нас</a></li>
+	        	<li class="nav-item"><a href="pocetnaLogIn.html" class="nav-link" style="font-size:18px; color: #014421;">Станица</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link" style="font-size:18px; color: #014421;">Контакт</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+   
+    <section class="home-slider owl-carousel">
+      <div class="slider-item" style="background-image:url(images/train.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-12 text-center ftco-animate">
+            <h1 class="mb-4">За нас</h1>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+		
+		<section class="ftco-section ftco-no-pb" style="background-image: radial-gradient( circle 2569px at -2.9% 12.9%,   #acbf60   10%, #8a9a5b  46.4%, #665d1e 80.5%, #d1bea8  100.7% );">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-12 text-center heading-section ftco-animate">
+            <h2 class="mb-4" style="font-size:30px; color: #4b5320; text-align: justify; "><b>Нашата мисија<b><br><br><span style="font-size:20px; text-align: justify; color:   #4b5320;"> 
+Сакаме да создадеме свет каде што секој може да изгради нешто значајно со технологијата, а секој има алатки за учење, ресурси и можности да го стори тоа. Кодот содржи свет на можности - сè што е потребно е љубопитност и желба за учење.  Ние, во Python kids,  сме посветени на зајакнување на сите луѓе, без оглед на тоа каде се во нивните патувања за кодирање, да продолжат да учат, растат и да имаат влијание врз светот околу нив.</span></h2>
+          </div>
+        </div>	
+			</div>
+		</section>
+
+		
+     <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">Контакт</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Online</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+389 78 459 762</span></a></li>
+	                <li><a href="mailto:info@yoursite.com"><span class="icon icon-envelope"></span><span class="text">pythonkids@yahoo.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+          
+              
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">Линкови</h2>
+              <ul class="list-unstyled">
+                <li class="nav-item active"><a href="index.html" class="nav-link pl-0">Почетна</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link">За нас</a></li>
+	        	<li class="nav-item"><a href="pocetnaLogIn.html" class="nav-link">Станица</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Контакт</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">Subscribe Us!</h2>
+              <form action="#" class="subscribe-form">
+                <div class="form-group">
+                  <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
+                  <input type="submit" value="Subscribe" class="form-control submit px-3">
+                </div>
+              </form>
+            </div>
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
+            	<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center"> </div>
+        </div>
+      </div>
+    </footer>
+   <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

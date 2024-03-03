@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+  </head>
+  <body>
+	 <style>
+	 	body{
+	 		background-color:#ffefd5;
+	 		
+	 	}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#progressBar {
+  width: 100%;
+  height: 20px;
+}
+
+/* Customize the appearance of the progress bar */
+#progressBar::-webkit-progress-bar {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+#progressBar::-webkit-progress-value {
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+#questions h3 {
+    font-size: 20px; 
+}
+#questions label {
+    font-size: 18px; /* Adjust the font size as needed */
+    padding: 50px;
+}
+.carousel-item img {
+  width: 300px; /* Set the desired width */
+  height: 300px; /* Set the desired height */
+  object-fit: cover; /* Ensure the image covers the entire specified dimensions */
+}
+.carousel-caption h2{
+	color: white;
+	margin-top: -100px;
+}
+.carousel-caption h3{
+	color: white;
+}
+
+
+
+	 </style>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar" >
+	    <div class="container d-flex align-items-center">
+	    	<a class="navbar-brand" href="#">Python<br><p style="margin-left: 60px;"> kids</p></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item active"><a href="home.html" class="nav-link pl-0" style="font-size:18px; color: #c46210;">Почетна</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link" style="font-size:18px; color: #c46210;">За нас</a></li>
+	        	<li class="nav-item"><a href="Stanici.html" class="nav-link" style="font-size:18px; color: #c46210;">Станица</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link" style="font-size:18px; color: #c46210;">Контакт</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav --> 
+
+    <hr style="margin-top:-30px; background-color:#f8b878;">
+    <br>
+    <section class="home-slider owl-carousel">
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 text-center ftco-animate">
+            <h1 class="mb-4" style="color: black; font-family: serif; text-decoration: underline; text-decoration-color: #f8b878;"><b>Променливи во Python и  <span>Влезно/Излезни функции</span></b></h1>
+          </div>
+        </div>
+    </section>
+    <br>
+
+		<section class="ftco-section ftco-no-pt ftc-no-pb" style="margin-top: -450px;">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-3 order-md-last wrap-about py-5 wrap-about bg-dark">
+						<div class="text px-4 ftco-animate">
+						<img src="images/ph1.png">
+						</div>
+					</div>
+					<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
+						<div class="col-md-10 order-md-last wrap-about py-5 wrap-about bg-dark">
+          		<h2 class="mb-4" style="font-size: 25px; color: #ffe5b4;">На втората станица од твоето патување во <p style="margin-left: 140px;">светот на Python:</p></h2>
+          	</div>
+						<div class="row mt-5">
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center" style="background-color: #007f66;"><span class="flaticon-security"></span></div>
+									<div class="text">
+										<h3><br></h3>
+										<p ><b>Ќе ги разбереш влезно/излезните променливи</b></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center" style="background-color: #007f66;"><span class="flaticon-reading"></span></div>
+									<div class="text">
+										<h3><br></h3>
+										<p style="margin-top:-10px;"><b>Ќе ги разбереш основните поими на променливи, податочни типови, компоненти и функции </b></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center" style="background-color: #007f66;"><span class="flaticon-jigsaw"></span></div>
+									<div class="text">
+										<h3><br></h3>
+										<p><b>Ќе креираш променливи</b></p>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-intro" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h2 style="color: #007f66; font-size:20px; text-align: justify; ">Откако инсталираме соодветна развојна околина за Python, веќе ќе научиме што се променливи како и каде се користат како и за влезно/излезните функции во Python. Пред да почнеме со пишување код да се запознаеме со неколку нови поими кои понатаму ќе ги употребуваме:</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-intro" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h2 style="color: #353839; font-size:50px;">1. Варијабли/Променливи</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+		<section class="ftco-section ftco-no-pb">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-12 text-center heading-section ftco-animate">
+            <h2 class="mb-4" style="font-size:20px; color:   #353839; text-align: justify; "><span style="font-size:20px; text-align: justify; color:   #007f66;">Променливи или варијабли, се посебни локации во меморијата на компјутерот кои ги користиме за да чуваме вредност.
+						Постојат правила при пишување на имиња на променливи во Python:<br><p style="margin-left:100px;">
+						- Името на променливата мора да започне со буква или знак на долна црта.<br>
+						- Името на променливата не може да започне со број.<br>
+						- Името на променливата може да содржи само алфа-нумерички знаци и долни црти (Az, 0-9 и _ ).<br>
+						- Името на променливата не може да биде ниту еден од клучните зборови на Python.<br>
+						- Имињата на променливите се чувствителни на големи букви (age, Age и AGE се три различни  <br>променливи).</p></span></h2>
+          </div>
+        </div>	
+
+        <div class="row" style="color:#007f66; font-size: 20px; ">
+				  <div class="col" style="margin-left: 150px;">Правилно се именуваат променливи:
+				  	<div class="col">myname = “Elena”</div>
+				  	<div class="col">my_name = “Elena”</div>
+				  	<div class="col">_my_name = “Elena”</div>
+				  	<div class="col">myName = “Elena”</div>
+				  	<div class="col">MYNAME = “Elena”</div>
+				  	<div class="col">myname9 = “Elena”</div>
+				  </div>
+				  <div class="col">Неправилно се именуваат променливи:
+				  	<div class="col">1myname = “Elena”</div>
+				  	<div class="col">my-name = “Elena”</div>
+				  	<div class="col">my name = “Elena”</div>
+				  </div>
+				</div>
+			</div>
+		</section>
+
+<br><br><br>
+	<section class="ftco-intro" style="background-image: url(images/course-1.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h2 style="color: #353839; font-size:50px;">2. Податочни типови</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+<section class="ftco-section ftco-no-pb">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-12 text-center heading-section ftco-animate">
+            <h2 class="mb-4" style="font-size:20px; color:   #353839; text-align: justify; "><span style="font-size:20px; text-align: justify; color:   #007f66;">Секоја променлива има свој податочен тип. Променливите во Python не мора да се декларираат сo точно одреден тип. Во моментот кога доделуваме вредност на променливата, Python автоматски го одредува типот на податокот кој го прима.</span></h2>
+          </div>
+        </div>	
+			</div>
+		</section>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col">
+          <img class="d-block w-100" src="images/bg1.png" alt="First slide">
+          <div class="carousel-caption">
+          	<h2>x = int(20)</h2><br>
+            <h3>Mоже да има целобројна вредност</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add more carousel items as needed -->
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col">
+          <img class="d-block w-100" src="images/bg2.png" alt="First slide">
+          <div class="carousel-caption">
+            <h2>x = float(20.5)</h2><br>
+            <h3>Mоже да има децимална вредност</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <div class="row">
+        <div class="col">
+          <img class="d-block w-100" src="images/bg3.png" alt="First slide">
+          <div class="carousel-caption">
+            <h2>x = bool(5)</h2><br>
+            <h3>Mоже да има булова вредност</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col">
+          <img class="d-block w-100" src="images/bg4.png" alt="First slide">
+          <div class="carousel-caption">
+            <h2>x = range(6)</h2><br>
+            <h3>Mоже да има ранг</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add more carousel items as needed -->
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col">
+          <img class="d-block w-100" src="images/bg5.png" alt="First slide">
+          <div class="carousel-caption">
+            <h2>x = str("Hello World")</h2><br>
+            <h3>Mоже да има текст</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <div class="row">
+        <div class="col">
+          <img class="d-block w-100" src="images/bg6.png" alt="First slide">
+          <div class="carousel-caption">
+            <h2>x = list ["apple", "banana", "cherry"]</h2><br>
+            <h3>Mоже да има листи</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <div class="row">
+        <div class="col">
+          <img class="d-block w-100" src="images/bg7.png" alt="First slide">
+          <div class="carousel-caption">
+            <h2>x = tuple("apple", "banana", "cherry")</h2><br>
+            <h3>Mоже да има торки</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Carousel controls (optional) -->
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:black;"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color:black;"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+<br><br><br>
+	<section class="ftco-intro" style="background-image: url(images/course-3.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h2 style="color: #353839; font-size:50px;">3. Коментари </h2>
+					</div>
+				</div>
+			</div>
+		</section>
+<section class="ftco-section ftco-no-pb">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-12 text-center heading-section ftco-animate">
+            <h2 class="mb-4" style="font-size:20px; color:   #353839; text-align: justify; "><span style="font-size:20px; text-align: justify; color:   #007f66;">Коментарите се делови од кодот кои не се извршуваат и служат за објаснување на функционалноста на кодот.</span></h2>
+          </div>
+        </div>	
+        <div class="row" style="color:#007f66; font-size: 20px; ">
+				  <div class="col" style="margin-left: 150px;"><u>Едно линиски коментар:</u>&nbsp;&nbsp;<b> # </b><br>Примери:<br>
+				  	<div class="col">
+				  	<textarea id="area1" rows="5">#print("Hello, World!")
+print("Cheers, Mate!")</textarea>
+<py-script>
+    from js import document
+    def runTextInTag(id):
+        src = document.getElementById(id).value
+        exec(src)
+</py-script>
+<button py-click="runTextInTag('area1')" id="run">Run!</button>
+				  	</div>
+
+				  </div>
+
+				  <div class="col"><u>Повеќе линиски коментар:</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> """ &nbsp; """</b> <br>Примери:
+				  	<div class="col">
+				  	<textarea id="area2" rows="8">"""
+This is a comment
+written in
+more than just one line
+"""
+print("Hello, World!") 
+</textarea>
+<py-script>
+    from js import document
+    def runTextInTag(id):
+        src = document.getElementById(id).value
+        exec(src)
+</py-script>
+<button py-click="runTextInTag('area2')" id="run">Run!</button>
+				  	</div>
+				  </div>
+				</div>
+			</div>
+		</section>
+
+<br><br><br>
+	<section class="ftco-intro" style="background-image: url(images/course-4.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<h2 style="color: #353839; font-size:50px;">4. Промена на податочен тип </h2>
+					</div>
+				</div>
+			</div>
+		</section>
+<section class="ftco-section ftco-no-pb">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-12 text-center heading-section ftco-animate">
+            <h2 class="mb-4" style="font-size:20px; color:   #353839; text-align: justify; "><span style="font-size:20px; text-align: justify; color:   #007f66;">Casting во програмирањето се однесува на промена на типот од еден во друг податочен тип. Треба да се внимава при користење на casting бидејќи може да дојде до губење на информациите или да дојде до неправилни резултати. На пример: кога претвораме децимален број во цел број го губиме децималниот дел.</span></h2>
+          </div>
+        </div>	
+        <div class="row" style=" font-size: 20px; ">
+				  <div class="col" style="color:#c46210 ; margin-left: 150px;">int() - конструира цел број од цел број буквално, float literal (со отстранување на сите децимали) или стринг буквално (под услов низата да претставува цел број)<br>
+				  	<div class="col">
+				  	<textarea id="area3" rows="8">a = int(1)
+b = int(2.8)
+c = int("3")
+
+print('a =', a)
+print('b =', b)
+print('c =', c)
+</textarea>
+<py-script>
+    from js import document
+    def runTextInTag(id):
+        src = document.getElementById(id).value
+        exec(src)
+</py-script>
+<button py-click="runTextInTag('area3')" id="run">Run!</button>
+				  	</div>
+
+				  </div>
+
+				 <div class="col" style="margin-left: 150px; color:#556b2f;">float() - конструира пловечки број од цел број буквално, float literal или стринг буквално (под услов низата да претставува float или цел број)<br>
+				  	<div class="col">
+				  	<textarea id="area4" rows="9">x = float(1)
+y = float(2.8)
+z = float("3")
+w = float("4.2")
+
+print('x =', x)
+print('y =', y)
+print('z =', z)
+print('w =', w)
+
+</textarea>
+<py-script>
+    from js import document
+    def runTextInTag(id):
+        src = document.getElementById(id).value
+        exec(src)
+</py-script>
+<button py-click="runTextInTag('area4')" id="run">Run!</button>
+
+				  	</div>
+
+				  </div>
+
+				   <div class="col" style="margin-left: 150px; color:#4169e1;">str() - конструира низа од широк спектар на типови на податоци, вклучувајќи низи, целобројни литерали и float литерали<br>
+				  	<div class="col">
+				  	<textarea id="area5" rows="8">t = str("s1")
+s = str(2)
+r = str(3.0)
+
+print('t =', t)
+print('s =', s)
+print('r =', r)
+
+</textarea>
+<py-script>
+    from js import document
+    def runTextInTag(id):
+        src = document.getElementById(id).value
+        exec(src)
+</py-script>
+<button py-click="runTextInTag('area5')" id="run">Run!</button>
+<button onclick="clearOutput()">Clear Output</button>
+<button style=" font-size:20px; background-color:#353839; "><a href="testStanica2/index.html" style="color:#fbceb1;" >Test</a></button>
+				  	</div>
+				  </div>
+
+<script>
+    function clearOutput() {
+        var outputWindow = document.querySelector('py-terminal[docked]');
+        if (outputWindow) {
+            outputWindow.innerHTML = '';
+        }
+    }
+
+</script>
+
+<br><br>
+						
+				</div>
+			</div>
+		</section>
+<br><br>
+
+		<section class="ftco-gallery">
+    	<div class="container-wrap">
+    		<div class="row no-gutters">
+					<div class="col-md-3 ftco-animate">
+						<a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/course-1.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="images/course-2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/course-2.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_3.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+					<div class="col-md-3 ftco-animate">
+						<a href="images/course-3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/course-3.jpg);">
+							<div class="icon mb-4 d-flex align-items-center justify-content-center">
+    						<span class="icon-instagram"></span>
+    					</div>
+						</a>
+					</div>
+        </div>
+    	</div>
+    </section>
+
+		
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">Контакт</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Online</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+389 78 459 762</span></a></li>
+	                <li><a href="mailto:info@yoursite.com"><span class="icon icon-envelope"></span><span class="text">pythonkids@yahoo.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+          
+              
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">Линкови</h2>
+              <ul class="list-unstyled">
+                <li class="nav-item active"><a href="home.html" class="nav-link pl-0">Почетна</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link">За нас</a></li>
+	        	<li class="nav-item"><a href="Stanici.html" class="nav-link">Станица</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Контакт</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">Subscribe Us!</h2>
+              <form action="#" class="subscribe-form">
+                <div class="form-group">
+                  <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
+                  <input type="submit" value="Subscribe" class="form-control submit px-3">
+                </div>
+              </form>
+            </div>
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
+            	<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center"> </div>
+        </div>
+      </div>
+    </footer>
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
