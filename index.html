@@ -96,7 +96,8 @@ button:hover {
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
-overflow: auto; /* or overflow: scroll; */
+  max-height: calc(100vh - 120px); /* Adjust as needed */
+  overflow-y: auto;
 }
 
 /* Style the horizontal ruler */
@@ -250,11 +251,28 @@ hr {
             modal.style.display = "none";
         }
     }
+
+    // Adjust modal height on mobile devices
+function adjustModalHeight() {
+    var modal = document.getElementById('id01');
+    var modalContent = document.querySelector('.modal-content');
+    if (modal && modalContent) {
+        var viewportHeight = window.innerHeight;
+        modalContent.style.maxHeight = (viewportHeight - 120) + 'px';
+    }
+}
+
+// Call the adjustModalHeight function when the window is resized
+window.addEventListener('resize', adjustModalHeight);
+
+// Call the adjustModalHeight function initially
+adjustModalHeight();
+
 </script>
 
 
 
-    <section class="home-slider owl-carousel">
+    <section class="home-slider owl-carousel" style="background-color:lightgrey; color: black;">
       <div class="slider-item" style="background-image:url(images/hogwarts.jpg)">
       	<div class="overlay"></div>
         <div class="container">
