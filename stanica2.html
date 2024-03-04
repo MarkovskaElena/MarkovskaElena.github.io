@@ -172,7 +172,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-						<h2 style="color: #353839; font-size:50px;">1. Варијабли/Променливи</h2>
+						<h2 style="color: #ff00ff ; font-size:50px;">1. Варијабли/Променливи</h2>
 					</div>
 				</div>
 			</div>
@@ -184,17 +184,19 @@
 				<div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-12 text-center heading-section ftco-animate">
             <h2 class="mb-4" style="font-size:20px; color:   #353839; text-align: justify; "><span style="font-size:20px; text-align: justify; color:   #007f66;">Променливи или варијабли, се посебни локации во меморијата на компјутерот кои ги користиме за да чуваме вредност.
-						Постојат правила при пишување на имиња на променливи во Python:<br><p style="margin-left:100px;">
-						- Името на променливата мора да започне со буква или знак на долна црта.<br>
-						- Името на променливата не може да започне со број.<br>
-						- Името на променливата може да содржи само алфа-нумерички знаци и долни црти (Az, 0-9 и _ ).<br>
-						- Името на променливата не може да биде ниту еден од клучните зборови на Python.<br>
-						- Имињата на променливите се чувствителни на големи букви (age, Age и AGE се три различни  <br>променливи).</p></span></h2>
+						Постојат правила при пишување на имиња на променливи во Python:<br></span></h2>
+						<ul style="text-align: left; color:   #007f66;">
+						  <li>Името на променливата мора да започне со буква или знак на долна црта.</li>
+						  <li>Името на променливата не може да започне со број.</li>
+						  <li>Името на променливата може да содржи само алфа-нумерички знаци и долни црти (Az, 0-9 и _ ).</li>
+						  <li>Името на променливата не може да биде ниту еден од клучните зборови на Python.</li>
+						  <li>Имињата на променливите се чувствителни на големи букви (age, Age и AGE се три различни променливи).</li>
+						</ul> 
           </div>
         </div>	
 
         <div class="row" style="color:#007f66; font-size: 20px; ">
-				  <div class="col" style="margin-left: 150px;">Правилно се именуваат променливи:
+				  <div class="col">Правилно се именуваат променливи:
 				  	<div class="col">myname = “Elena”</div>
 				  	<div class="col">my_name = “Elena”</div>
 				  	<div class="col">_my_name = “Elena”</div>
@@ -217,7 +219,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-						<h2 style="color: #353839; font-size:50px;">2. Податочни типови</h2>
+						<h2 style="color: #00ff00; font-size:50px;">2. Податочни типови</h2>
 					</div>
 				</div>
 			</div>
@@ -343,7 +345,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-						<h2 style="color: #353839; font-size:50px;">3. Коментари </h2>
+						<h2 style="color: #ffd700; font-size:50px;">3. Коментари </h2>
 					</div>
 				</div>
 			</div>
@@ -356,7 +358,7 @@
           </div>
         </div>	
         <div class="row" style="color:#007f66; font-size: 20px; ">
-				  <div class="col" style="margin-left: 150px;"><u>Едно линиски коментар:</u>&nbsp;&nbsp;<b> # </b><br>Примери:<br>
+				  <div class="col"><u>Едно линиски коментар:</u>&nbsp;&nbsp;<b> # </b><br>Примери:<br>
 				  	<div class="col">
 				  	<textarea id="area1" rows="5">#print("Hello, World!")
 print("Cheers, Mate!")</textarea>
@@ -399,7 +401,7 @@ print("Hello, World!")
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-						<h2 style="color: #353839; font-size:50px;">4. Промена на податочен тип </h2>
+						<h2 style="color:#00bfff ; font-size:50px;">4. Промена на податочен тип </h2>
 					</div>
 				</div>
 			</div>
@@ -412,7 +414,7 @@ print("Hello, World!")
           </div>
         </div>	
         <div class="row" style=" font-size: 20px; ">
-				  <div class="col" style="color:#c46210 ; margin-left: 150px;">int() - конструира цел број од цел број буквално, float literal (со отстранување на сите децимали) или стринг буквално (под услов низата да претставува цел број)<br>
+				  <div class="col" style="color:#c46210 ;">int() - конструира цел број од цел број буквално, float literal (со отстранување на сите децимали) или стринг буквално (под услов низата да претставува цел број)<br>
 				  	<div class="col">
 				  	<textarea id="area3" rows="8">a = int(1)
 b = int(2.8)
@@ -433,7 +435,7 @@ print('c =', c)
 
 				  </div>
 
-				 <div class="col" style="margin-left: 150px; color:#556b2f;">float() - конструира пловечки број од цел број буквално, float literal или стринг буквално (под услов низата да претставува float или цел број)<br>
+				 <div class="col" style="color:#556b2f;">float() - конструира пловечки број од цел број буквално, float literal или стринг буквално (под услов низата да претставува float или цел број)<br>
 				  	<div class="col">
 				  	<textarea id="area4" rows="9">x = float(1)
 y = float(2.8)
@@ -458,7 +460,7 @@ print('w =', w)
 
 				  </div>
 
-				   <div class="col" style="margin-left: 150px; color:#4169e1;">str() - конструира низа од широк спектар на типови на податоци, вклучувајќи низи, целобројни литерали и float литерали<br>
+				   <div class="col" style="color:#4169e1;">str() - конструира низа од широк спектар на типови на податоци, вклучувајќи низи, целобројни литерали и float литерали<br>
 				  	<div class="col">
 				  	<textarea id="area5" rows="8">t = str("s1")
 s = str(2)
@@ -477,7 +479,7 @@ print('r =', r)
 </py-script>
 <button py-click="runTextInTag('area5')" id="run">Run!</button>
 <button onclick="clearOutput()">Clear Output</button>
-<button style=" font-size:20px; background-color:#353839; "><a href="testStanica2/index.html" style="color:#fbceb1;" >Test</a></button>
+<button style=" font-size:20px; background-color:#353839; "><a href="testStanica2/index.html" style="color:#fbceb1;" >Квиз</a></button>
 				  	</div>
 				  </div>
 
