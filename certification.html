@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate</title>
+
     <style>
         body {
             background-color: white;
@@ -13,13 +14,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-
+            height: 100vh; /* Ensure full viewport height */
         }
 
         .certificate {
+            position: relative;
             text-align: center;
             border: 5px double #000080;
+            padding: 20px;
+            max-width: 80%;
+            margin-top: -50px; /* Adjust as needed */
+            background-color: #f9f9f9; /* Optional: Add a background color */
         }
 
         h1 {
@@ -30,42 +35,54 @@
             margin-bottom: 10px;
             font-size: 18px;
         }
+
+        .download-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .certificate {
+                max-width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .certificate {
+                max-width: 95%;
+            }
+        }
     </style>
 </head>
 <body>
-    <section style="margin-top: -50px;">
-        <a style="margin-left: 1300px;" onclick="capturePage()">
-        <img style="width: 50px; height: 50px; " src="images/download.jpg"></a>
+    <div class="certificate" id="certificate">
+        <h1 style="font-size: 2.5rem;">Certificate of Completion</h1>
+        <p style="font-size: 1.5rem;">This certifies that<br><br> <span id="name" style="font-family: Brush Script MT, Brush Script Std, cursive; font-size: 3rem; text-decoration: underline; color: #000080;">[Name]</span><br><br> For successfully completing a free online course </p><br><br>
+        <p style="font-size: 1rem;">Python for Beginners<br><br><br> Provided by<br><br> Python Kids</p>
+        <p style="font-size: 1rem; margin-top:20px;">Issued on <span id="date">[Date]</span></p><br><br><br>
+    </div>
 
-        <div class="certificate" id="certificate">
-            <p style="font-size: 65px;">Certificate of Completion</p><br>
-            <p style="font-size: 35px;">This certifies that<br><br> <span id="name" style="font-family: Brush Script MT, Brush Script Std, cursive; font-size: 70px; text-decoration: underline; color: #000080; " >[Name]</span><br><br> For successfully completing a free online course </p><br><br>
-            <p style="font-size: 20px;">Python for Beginners<br><br><br> Provided by<br><br> Python Kids</p>
-            <p style="margin-left: -50px; margin-top:20px; font-size: 20px; ">Issued on <span id="date" >[Date]</span></p><br><br><br>
-        </div>
-    </section>
+    <button class="download-button" onclick="saveCertificate()">Download Certificate</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Get current date
             var currentDate = new Date().toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
             });
 
-            // Get logged-in user's name from localStorage
             var loggedInUserName = localStorage.getItem('loggedInUserName');
 
             if (loggedInUserName) {
-                // Update the name dynamically
                 document.getElementById('name').textContent = loggedInUserName;
             }
             
-            // Update the date dynamically
             document.getElementById('date').textContent = currentDate;
         });
 
@@ -77,18 +94,6 @@
                     const link = document.createElement('a');
                     link.href = imgData;
                     link.download = 'certificate.png';
-                    link.click();
-                }
-            });
-        }
-
-        function capturePage() {
-            html2canvas(document.body, {
-                onrendered: function(canvas) {
-                    const imgData = canvas.toDataURL('image/png');
-                    const link = document.createElement('a');
-                    link.href = imgData;
-                    link.download = 'page_snapshot.png';
                     link.click();
                 }
             });
