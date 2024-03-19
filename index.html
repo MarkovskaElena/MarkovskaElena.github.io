@@ -135,6 +135,7 @@ hr {
      width: 100%;
   }
 }
+<style>
   @media screen and (max-width: 768px) {
   /* CSS rules for screens smaller than 768px (e.g., mobile phones) */
 }
@@ -162,7 +163,7 @@ hr {
       </div>
     </nav>
     <!-- END nav -->
-<br><br><br><br>
+
 <!-- signin.html -->
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -288,21 +289,13 @@ adjustModalHeight();
           <div class="col-md-8 text-center ftco-animate">
             <h1 class="mb-4">Спремен/а си за авантура?</h1>
             <p style="color:white; font-size: 30px; font-family: serif; ">Започни го твоето магично патување во светот на Python, програмски јазик со кој ќе можеш да креираш забавни игри и интерактивни приказни.</p>
-            <div>
-              <p style="color:white; font-size: 25px; font-family: serif; ">Ова патување можеш да го почнеш со темпо кое ти одговара, <br>(ниво: &#9733;&#9734;&#9734;&#9734;&#9734;) не е потребно предзнаење!</p>
-            </div>
+            <p style="color:white; font-size: 25px; font-family: serif; ">Ова патување можеш да го почнеш со темпо кое ти одговара, <br>(ниво: &#9733;&#9734;&#9734;&#9734;&#9734;) не е потребно предзнаење!</p>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; "><b>START</b></button>
           </div>
         </div>
         </div>
       </div>
-    </section>            
-
-    <div style="position: relative; width: 100%; height: 200px; background-color: lightgrey;">
-    <button onclick="document.getElementById('id01').style.display='block';" style="width: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: black; color: white;">
-        <b>START</b>
-    </button>
-</div>
-
+    </section>
     <br><br><br> <br><br><br>
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
